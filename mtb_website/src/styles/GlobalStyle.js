@@ -1,5 +1,11 @@
 import { createGlobalStyle } from "styled-components"
 const GlobalStyle = createGlobalStyle`
+  *{
+    -ms-overflow-style: none;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
   :root{
     --dark-navy: #020c1b;
     --navy: #0a192f;
