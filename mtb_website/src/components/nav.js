@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import styled, {keyframes} from "styled-components"
 import Scrollspy from "react-scrollspy"
 import {links} from '../config.js'
-import resume from "../images/Allen Lu - Resume.pdf"
+import resume from "../images/Allen-Lu-Resume.pdf"
 import FadeInDown from "@bit/formidablelabs.react-animations.fade-in-down";
 const FadeInDownAnimation = keyframes`${FadeInDown}`;
 const FadeInDownDiv = styled.div`

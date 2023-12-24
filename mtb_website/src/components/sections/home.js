@@ -63,17 +63,16 @@ const StyledHomeSection = styled.section`
 const Home = () => {
   const one = <h1>Hi, my name is</h1>;
   const two = <h2 className="big-heading">Allen Lu.</h2>;
-  const three = <h3 className="big-heading">I am a software developer.</h3>;
+  const three = <h3 className="big-heading">I am a software engineer.</h3>;
   const four = (
     <>
       <p>
-        I am a fourth-year student majoring in 
-        <span className="special"> Computer Science</span> at 
-        <span className="special"> Carnegie Mellon University</span>
-        . Currently, I am currently a Software Engineer Intern at {''}
-        {''} <a href="https://zoom.us/" className="special" target="_blank" rel="noopener noreferrer"> Zoom </a> {''}
-        and am also working at the Carnegie  
-        {''} <a href="http://vdel.me.cmu.edu/" className="special" target="_blank" rel="noopener noreferrer"> Visual Design and Engineering Lab </a>. 
+        I am a fourth-year senior majoring in 
+        {''} <a href="https://www.cs.cmu.edu" className="special" target="_blank" rel="noopener noreferrer"> Computer Science </a> at
+        <a href="https://www.cmu.edu" className="special" target="_blank" rel="noopener noreferrer"> Carnegie Mellon University </a>. 
+        Most recently, I was a back-end software engineering intern at
+        {''} <a href="https://ziphq.com/" className="special" target="_blank" rel="noopener noreferrer"> ZipHQ </a>.
+        I am currently seeking new grad software engineering roles.
     
       </p>
     </>

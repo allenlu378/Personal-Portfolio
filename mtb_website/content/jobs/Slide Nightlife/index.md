@@ -4,7 +4,7 @@ title: "Summer Software Development Intern"
 company: "Slide Nightlife"
 location: "Washington D.C."
 range: "June - August 2021"
-url: "google.com"
+url: ""
 ---
 
 * Web and mobile application to unify nightlife by centralizing club/client information and allowing users to pay, earn rewards, and socialize at all nightclubs with one app.

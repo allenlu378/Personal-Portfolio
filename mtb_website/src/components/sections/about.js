@@ -9,6 +9,7 @@ const StyledAboutSection = styled.section`
   h2::before{
       content: "0" counter(section) ".";
   }
+  padding-bottom: 20vh;
   max-width: 900px;
   min-height: 85vh;
   counter-increment: section 1;
@@ -59,18 +60,34 @@ const StyledText = styled.div`
 const StyledPic = styled.div`
   position: relative;
   max-width: 300px;
+  height: 100%;
   @media (max-width: 768px) {
     margin: 50px auto 0;
     width: 70%;
   }
+  background-color: var(--green);
+  border-radius: var(--border-radius);
+  transition-duration: 0.5s;
   .wrapper {
     ${({ theme }) => theme.mixins.boxShadow};
     display: block;
     position: relative;
     width: 100%;
-    border-radius: var(--border-radius);
-    background-color: var(--green);
-    &:hover,
+    height: 100%;
+    &:hover {
+      
+      background: transparent;
+      outline: 0;
+      &:after {
+        top: 15px;
+        left: 15px;
+      }
+      .img {
+        height
+        filter: none;
+        mix-blend-mode: normal;
+      }
+    },
     &:focus {
       background: transparent;
       outline: 0;
@@ -79,6 +96,7 @@ const StyledPic = styled.div`
         left: 15px;
       }
       .img {
+        height
         filter: none;
         mix-blend-mode: normal;
       }
@@ -87,7 +105,6 @@ const StyledPic = styled.div`
       position: relative;
       border-radius: var(--border-radius);
       mix-blend-mode: multiply;
-      filter: grayscale(100%) contrast(1);
       transition: var(--transition);
     }
     &:before,
@@ -116,7 +133,7 @@ const StyledPic = styled.div`
 `;
 
 const About = () => {
-    const skills = ['Python', 'Java', 'Javascript', 'C', 'Node.js', 'React'];
+    const skills = ['Python', 'Java', 'Typescript', 'GraphQL', 'React', 'C', 'Go', 'MongoDB'];
     return (
         <StyledAboutSection >
           <h2 className="numbered-heading" id="about" style={{paddingTop: "125px"}}> About Me</h2>
@@ -124,10 +141,6 @@ const About = () => {
           <div className="inner">
             <StyledText>
               <div>
-                <p>
-                  Hello! Some crap about me 
-                </p>
-    
                 <p>
                   Other than software development, some of my hobbies are playing and watching sports, 
                   gaming, eating, and bouldering!
@@ -146,8 +159,9 @@ const About = () => {
               <div className="wrapper">
                 <StaticImage
                   className="img"
-                  src="../../images/aboutpic.jpeg"
-                  width={500}
+                  src="../../images/about_me.png"
+                  width={300}
+                  // height={5000}
                   quality={95}
                   formats={['AUTO', 'WEBP', 'AVIF']}
                   alt="Headshot"
